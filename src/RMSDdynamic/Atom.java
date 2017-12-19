@@ -1,3 +1,4 @@
+package RMSDdynamic;
 public class Atom {
 	private String atomType;
 	private float xPos;
@@ -17,6 +18,18 @@ public class Atom {
 		pos[2] = this.yPos;
 		pos[3] = this.zPos;
 		return pos;
+	}
+	
+	public void setxPos(float xPos) {
+		this.xPos = xPos;
+	}
+
+	public void setyPos(float yPos) {
+		this.yPos = yPos;
+	}
+
+	public void setzPos(float zPos) {
+		this.zPos = zPos;
 	}
 
 	public float getxPos() {
