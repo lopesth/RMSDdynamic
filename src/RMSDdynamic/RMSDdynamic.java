@@ -8,7 +8,7 @@ public class RMSDdynamic {
 		ArrayList<Integer> frames = new ArrayList<Integer>();
 		frames.add(1);
 		frames.add(2);
-		Takeframes x = new Takeframes(frames, "/Users/thiagolopes/Desktop/vmdepin.xyz", 26);
+		FindMol x = new FindMol("/Users/thiagolopes/Desktop/vmdepin.xyz", 26);
 		ArrayList<Integer> y = x.takeFrameLines();
 		System.out.println(y);
 	}
