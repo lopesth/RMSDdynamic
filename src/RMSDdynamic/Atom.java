@@ -47,4 +47,10 @@ public class Atom {
 	public float getzPos() {
 		return zPos;
 	}
+	
+	@Override
+	public String toString() {
+		String atom = String.format("%5s",this.atomType) + String.format("%11.5f",xPos) + String.format("%11.5f",yPos) + String.format("%11.5f",zPos);
+		return atom;
+	}
 }

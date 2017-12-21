@@ -23,4 +23,14 @@ public class Molecule {
 	public Atom getAtom(int targetAtom) {
 		return this.molecule.get(targetAtom);
 	}
+	
+	@Override
+	public String toString() {
+		String toReturn = "Molecule:\n";
+		for (Atom atom : molecule) {
+			toReturn = toReturn + atom + "\n";
+		}
+		return toReturn;
+	}
+
 }
