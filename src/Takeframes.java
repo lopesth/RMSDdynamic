@@ -1,4 +1,3 @@
-package RMSDdynamic;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -21,11 +20,10 @@ public class Takeframes{
 		this.xyzStartLines = xyzStartLines;
 	}
 	
-	public ArrayList<Molecule> returnFrames(Integer[] framesToTake) throws IOException {
+	public ArrayList<Molecule> returnFrames(ArrayList<Integer> framesToTake) throws IOException {
 		ArrayList<Molecule> framesToWork = new ArrayList<Molecule>();
-		for (Integer frameNumber : framesToTake) {
-			Molecule frame = this.takeframe(frameNumber);
-			System.out.println(frame);
+		for (int i = 0; i < framesToTake.size(); i++) {
+			Molecule frame = this.takeframe(framesToTake.get(i));
 			framesToWork.add(frame);
 		}
 		return framesToWork;
@@ -35,7 +33,6 @@ public class Takeframes{
 		Molecule molecule = new Molecule();
 		int startValue = this.xyzStartLines.get(frameNumber-1);
 		int endValue = startValue +  this.basis;
-		int[] rangeLines = IntStream.rangeClosed(startValue, startValue+this.basis).toArray();
 		InputStream is = new FileInputStream(this.framesSourceName);
 		InputStreamReader isr = new InputStreamReader(is);
 		BufferedReader br = new BufferedReader(isr);
@@ -55,5 +52,6 @@ public class Takeframes{
 		}
 		return molecule;
 	}
+
 
 }

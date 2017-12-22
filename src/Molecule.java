@@ -1,4 +1,4 @@
-package RMSDdynamic;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,6 +22,10 @@ public class Molecule {
 	
 	public Atom getAtom(int targetAtom) {
 		return this.molecule.get(targetAtom);
+	}
+	
+	public int length(){
+		return this.molecule.size();
 	}
 	
 	@Override

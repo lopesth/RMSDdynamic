@@ -1,0 +1,36 @@
+.chart {
+    -fx-padding: 10px;
+    -fx-background-color: #010101;
+    -fx-legend-visible: false;
+}
+
+.chart-content {
+    -fx-padding: 30px;    
+}
+
+.chart-title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 1.6em;
+}
+
+.axis-label {
+    -fx-text-fill: #000000;
+}
+
+.chart-plot-background {
+    -fx-background-color:rgba(0,0,0,0);
+}
+
+.chart-content {
+    -fx-padding: 30px;
+    
+}
+.chart-legend {
+   -fx-background-color:  transparent;
+   -fx-padding: 20px;
+}
+ 
+.chart-legend-item-symbol{
+   -fx-background-radius: 0;
+}
+ 

@@ -1,4 +1,4 @@
-package RMSDdynamic;
+
 public class Atom {
 	private String atomType;
 	private float xPos;
