@@ -36,5 +36,13 @@ public class Molecule {
 		}
 		return toReturn;
 	}
+	
+	public String toStringSimple() {
+		String toReturn = "";
+		for (Atom atom : molecule) {
+			toReturn = toReturn + atom + "\n";
+		}
+		return toReturn;
+	}
 
 }

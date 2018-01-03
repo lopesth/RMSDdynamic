@@ -40,7 +40,7 @@ public class RMSDdynamic extends Application {
         XYChart.Series series = new XYChart.Series();
         series.setName("Dynamic in water");
 		int basis = 26;
-		String framesSourceName = "/Users/thiagolopes/Desktop/vmdepin.xyz";
+		String framesSourceName = "/Users/thiagolopes/Desktop/TRAJECsolv.xyz";
 		FindMol xyzData = new FindMol(framesSourceName, basis);
 		ArrayList<Integer> xyzStartLines = xyzData.takeFrameLines();
 		ArrayList<Integer> framesToTake = new ArrayList<Integer>();
