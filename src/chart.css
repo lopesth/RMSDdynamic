@@ -1,6 +1,6 @@
 .chart {
     -fx-padding: 10px;
-    -fx-background-color: #010101;
+    -fx-background-color: rgba(0,0,0,0);
     -fx-legend-visible: false;
 }
 
@@ -9,16 +9,19 @@
 }
 
 .chart-title {
-    -fx-text-fill: #ffffff;
+    -fx-text-fill: #000000;
     -fx-font-size: 1.6em;
 }
-
-.axis-label {
-    -fx-text-fill: #000000;
+.chart-horizontal-grid-lines {
+    -fx-stroke: transparent;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
 }
 
 .chart-plot-background {
     -fx-background-color:rgba(0,0,0,0);
+    -fx-border-color: black black transparent transparent;
 }
 
 .chart-content {
@@ -33,4 +36,21 @@
 .chart-legend-item-symbol{
    -fx-background-radius: 0;
 }
- 
+
+.axis {
+    -fx-tick-label-font-size:1em;
+    -fx-tick-label-font-color:#000000;
+}
+
+.axis-label {
+    -fx-text-fill: #000000;
+    -fx-font-size: 24px;
+}
+
+
+.axis:bottom {
+    -fx-border-color: black transparent transparent transparent;
+}
+.axis:left {
+    -fx-border-color: transparent black transparent transparent;
+}

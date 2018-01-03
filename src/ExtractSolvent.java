@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 public class ExtractSolvent {
 	
 	public static void main(String[] args) throws IOException {
@@ -66,10 +65,10 @@ public class ExtractSolvent {
 		FileWriter writer = new FileWriter(fileName); 
 		int step = 1;
 		for (Molecule molecule : moleculesToPrint) {
-			writer.write("         "+basis+'\n');
+			writer.write("         "+26+'\n');
 			writer.write(" STEP:           "+step+'\n');
 			writer.write(molecule.toStringSimple());
-			step = step +5;
+			step = step +1;
 		}
 		writer.close();
 	}

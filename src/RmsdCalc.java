@@ -1,4 +1,3 @@
-
 public class RmsdCalc {
 	Molecule molecule1;
 	Molecule molecule2;

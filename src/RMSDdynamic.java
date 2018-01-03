@@ -27,7 +27,7 @@ public class RMSDdynamic extends Application {
 
 	@Override public void start(Stage stage) throws IOException {
 		stage.setTitle("PLOT");
-		final NumberAxis yAxis = new NumberAxis(0.25, 1.75, 0.25);
+		final NumberAxis yAxis = new NumberAxis(0.0, 1.75, 0.25);
         final CategoryAxis xAxis = new CategoryAxis();
         
         xAxis.setLabel("Frames");       
@@ -40,12 +40,12 @@ public class RMSDdynamic extends Application {
         XYChart.Series series = new XYChart.Series();
         series.setName("Dynamic in water");
 		int basis = 26;
-		String framesSourceName = "/Users/thiagolopes/Desktop/TRAJECsolv.xyz";
+		String framesSourceName = "/Users/thiagolopes/Desktop/traject_withou_solute.xyz";
 		FindMol xyzData = new FindMol(framesSourceName, basis);
 		ArrayList<Integer> xyzStartLines = xyzData.takeFrameLines();
 		ArrayList<Integer> framesToTake = new ArrayList<Integer>();
 		framesToTake.add(1);
-		for (int i = 1000; i < 52001; i=i+1000) {
+		for (int i = 1000; i < 47850; i=i+1000) {
 			framesToTake.add(i);
 		}
 		ArrayList<Molecule> frames = new Takeframes(
